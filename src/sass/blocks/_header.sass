@@ -1,0 +1,32 @@
+.header
+  &__nav
+    position: fixed
+    z-index: 999
+    top: 0
+    left: 0
+    width: 100%
+    background: linear-gradient(to bottom, #76ac23, #84c128)
+
+.nav
+  font-family: 'BloomingElegantSans-Bold', sans-serif
+  font-size: 10px
+  &__list
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    list-style-type: none
+    margin: 0 auto
+    padding-left: 0
+    margin-top: 15px
+    margin-bottom: 15px
+    max-width: 560px
+
+.list
+  &__item
+    & a
+      text-decoration: none
+      text-transform: uppercase
+      color: $light
+
+

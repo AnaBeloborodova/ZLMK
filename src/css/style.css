@@ -310,6 +310,13 @@ template {
   font-style: normal;
   font-display: wrap; }
 
+@font-face {
+  font-family: 'BrutaGlbRegular-Regular';
+  src: url("../fonts/BrutaGlbRegular-Regular.woff") format("woff"), url("../fonts/BrutaGlbRegular-Regular.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
 * {
   box-sizing: border-box; }
 
@@ -317,10 +324,19 @@ body {
   width: 100%; }
 
 .container {
-  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
   max-width: 1200px;
+  padding: 30px 125px;
+  width: 100%;
+  height: 100%; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1px 125px;
   width: 100%;
   height: 100%; }
 
@@ -331,6 +347,20 @@ body {
   left: 0;
   width: 100%;
   background: linear-gradient(to bottom, #76ac23, #84c128); }
+
+.header__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  height: auto;
+  font-family: 'PT Serif Caption', sans-serif;
+  background: linear-gradient(to bottom, #70407c, #95719d); }
+
+.header__line {
+  width: 100%;
+  height: 4px;
+  background-color: #ffffff; }
 
 .nav {
   font-family: 'BloomingElegantSans-Bold', sans-serif;
@@ -346,8 +376,115 @@ body {
     margin-top: 15px;
     margin-bottom: 15px;
     max-width: 560px; }
+  .nav__line {
+    width: 100%;
+    height: 4px;
+    background-color: #cae69b; }
 
 .list__item a {
   text-decoration: none;
   text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1.5px; }
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 30%; }
+  .logo__name {
+    font-family: 'PT Serif Caption', serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 55px; }
+  .logo__text {
+    margin-top: -5px;
+    padding-left: 10px;
+    font-size: 12px;
+    font-family: 'BrutaGlbRegular-Regular', sans-serif;
+    color: #ffffff;
+    letter-spacing: 1.5px; }
+
+.tel {
+  width: 30%; }
+  .tel__border {
+    width: 55px;
+    padding: 9px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    background: linear-gradient(to top right, #5b356e, #b76ab2);
+    float: left;
+    margin-left: 25px; }
+  .tel__number {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 22px; }
+    .tel__number-big {
+      font-size: 28px; }
+
+.head__button {
+  padding: 22px 44px;
+  border-radius: 15px;
+  border: 3px solid #000000;
+  background: linear-gradient(to top, #6a2b7c, #ba93d6);
   color: #ffffff; }
+  .head__button span {
+    font-family: 'BloomingElegantSans-Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 1px; }
+
+.title {
+  width: 100%;
+  background: url("../img/bg-title.jpg") center/cover no-repeat;
+  height: 790px; }
+  .title__line {
+    width: 100%;
+    height: 4px;
+    color: #adabab; }
+  .title__head {
+    padding: 12px 21px;
+    width: 85%;
+    font-family: 'BrutaGlbRegular-Regular', sans-serif;
+    background-color: rgba(214, 221, 229, 0.8);
+    font-size: 50px; }
+  .title__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+
+.group-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid red; }
+  .group-text__slogan {
+    margin-top: 0;
+    padding: 12px 21px;
+    font-size: 33px;
+    line-height: 120%;
+    font-weight: normal;
+    font-family: 'BrutaGlbRegular-Regular', sans-serif;
+    background-color: rgba(214, 221, 229, 0.8); }
+  .group-text__small-text {
+    margin-top: 0;
+    padding: 12px 21px;
+    font-size: 33px;
+    line-height: 120%;
+    font-weight: normal;
+    font-family: 'BrutaGlbRegular-Regular', sans-serif;
+    background-color: rgba(214, 221, 229, 0.8); }
+
+.group__form {
+  padding: 50px 50px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(43, 51, 62, 0.8);
+  color: #ffffff; }
+  .group__form h4 {
+    font-size: 18px; }

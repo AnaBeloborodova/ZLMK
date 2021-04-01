@@ -4,25 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЗЛМК завод легких металлоконструкций</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
 <body>
-<div class="container">
-    <header class="header">
-        <nav class="nav header__nav">
-            <ul class="list nav__list">
-                <li class="item list__item"><a href="#"><img src="./dist/img/icons/home.png" alt="home"></a></li>
-                <li class="item list__item"><a href="#">Здания из ЛМК</a></li>
-                <li class="item list__item"><a href="#">Портфолио</a></li>
-                <li class="item list__item"><a href="#">О нас</a></li>
-                <li class="item list__item"><a href="#">Заказать</a></li>
-                <li class="item list__item"><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
 
-</div>
+<header class="header">
+    <nav class="nav header__nav">
+        <ul class="list nav__list">
+            <li class="item list__item"><a href="#"><img src="./dist/img/icons/home.png" alt="home"></a></li>
+            <li class="item list__item"><a href="#">Здания из ЛМК</a></li>
+            <li class="item list__item"><a href="#">Портфолио</a></li>
+            <li class="item list__item"><a href="#">О нас</a></li>
+            <li class="item list__item"><a href="#">Заказать</a></li>
+            <li class="item list__item"><a href="#">Контакты</a></li>
+        </ul>
+        <div class="line nav__line"></div>
+    </nav>
+    <div class="head header__head">
+        <div class="container">
+            <div class="logo head__logo">
+                <a href="#" class="picture logo__picture"><img src="./dist/img/icons/logo.png" alt="logo"></a>
+                <a href="#" class="name logo__name">ЗМЛК</a>
+                <p class="text logo__text">завод легких металлоконструкций</p>
+            </div>
+            <div class="tel head__tel">
+                <div class="border tel__border">
+                    <svg class="icon tel__icon" width="30" height="30" fill="white" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 512 512">
+                        <path d="M439.44 411.595l-77.319-77.318c-9.299-9.298-24.374-9.298-33.672 0l-32.036 32.036c-62.811-35.428-115.3-87.917-150.728-150.728l34.21-34.21c9.299-9.298 9.299-24.374 0-33.672l-77.319-77.316c-9.299-9.298-24.374-9.298-33.672 0L19.53 119.761l.191.191c-17.48 14.279-24.645 38.985-16.146 63.336C56.242 334.211 177.788 455.756 328.71 508.423c23.26 8.117 46.773 1.962 61.305-13.832l.05.05 49.374-49.374c9.3-9.298 9.3-24.373.001-33.672zM260.948 135.95c-9.271 0-16.787 7.516-16.787 16.787 0 9.271 7.515 16.787 16.787 16.787 44.954 0 81.528 36.573 81.528 81.527 0 9.271 7.516 16.787 16.787 16.787s16.787-7.516 16.787-16.787c0-63.466-51.635-115.101-115.102-115.101z"/>
+                        <path d="M260.948 67.591c-9.271 0-16.787 7.516-16.787 16.787 0 9.271 7.515 16.787 16.787 16.787 82.648 0 149.887 67.239 149.887 149.885 0 9.271 7.516 16.787 16.787 16.787 9.271 0 16.787-7.516 16.787-16.787 0-101.16-82.3-183.459-183.461-183.459z"/>
+                        <path d="M438.467 73.531C391.049 26.114 328.005 0 260.948 0c-9.271 0-16.787 7.516-16.787 16.787 0 9.271 7.516 16.787 16.787 16.787 119.916 0 217.477 97.559 217.477 217.477 0 9.271 7.516 16.787 16.787 16.787 9.271 0 16.787-7.516 16.787-16.787 0-67.059-26.114-130.103-73.532-177.52z"/>
+                    </svg>
+                </div>
+                <a class="tel__number" href="#">7 (923) 641-9900</a>
+                <a class="tel__number tel__number-big" href="#">573-003</a>
+            </div>
+            <button type="button" class="button head__button"><span>Заказать звонок</span></button>
+
+        </div>
+
+    </div>
+    <div class="line header__line"></div>
+
+</header>
+
+<section class="title">
+    <div class="wrapper">
+        <h1 class="head title__head">Открываете бизнес? <br>Расширяете производство и <br>нужен цех?</h1>
+        <div class="group title__group">
+            <div class="group-text group__group-text">
+                <h2 class="slogan group-text__slogan">Наши технологии и опыт позволяют качественно, а главное - быстро и
+                    недорого, построить Вам готовое
+                    здание необходимой конфигурации
+                    <b>специально под Ваш Бизнес!</b></h2>
+                <p class="small-text group-text__small-text">Оставьте заявку (за 1 клик) и мы с Вами свяжемся.</p>
+            </div>
+
+            <form class="form group__form" action="">
+                <h4>Сообщите свой номер телефона и мы Вам перезвоним: <sup>&#42;</sup></h4>
+                <input type="text" placeholder="+7 (913) 123-45-66">
+                <button><span>Отправить</span></button>
+                <p><sup>&#42;</sup> "Заявка в 1 клик" ни к чему Вас не обязывает, но позволяет сэкономить время. Детали
+                    заказа мы запишем сами, позвонив Вам по указанному номеру телефона.</p>
+            </form>
+        </div>
+    </div>
+
+    <div class="button">
+        <span>Подробнее</span>
+        <button type="button"></button>
+    </div>
+
+</section>
+<div class="line header__line"></div>
+<div class="line title__line"></div>
 
 
 </body>

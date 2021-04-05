@@ -321,7 +321,9 @@ template {
   box-sizing: border-box; }
 
 body {
-  width: 100%; }
+  width: 100%;
+  font-family: 'BloomingElegantSans-Bold', sans-serif;
+  letter-spacing: 1px; }
 
 .container {
   display: flex;
@@ -456,35 +458,83 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; }
+  .title__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .title__button span {
+      margin-bottom: 10px;
+      margin-top: 20px;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-size: 12px; }
+    .title__button button {
+      background-color: transparent;
+      border: none;
+      outline: none; }
+      .title__button button img {
+        width: 35px;
+        height: 35px; }
 
 .group-text {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  border: 1px solid red; }
+  margin-right: 40px; }
   .group-text__slogan {
     margin-top: 0;
-    padding: 12px 21px;
-    font-size: 33px;
+    padding: 12px 18px;
+    font-size: 30px;
     line-height: 120%;
     font-weight: normal;
     font-family: 'BrutaGlbRegular-Regular', sans-serif;
     background-color: rgba(214, 221, 229, 0.8); }
   .group-text__small-text {
     margin-top: 0;
-    padding: 12px 21px;
-    font-size: 33px;
+    padding: 12px 18px;
+    font-size: 30px;
     line-height: 120%;
     font-weight: normal;
     font-family: 'BrutaGlbRegular-Regular', sans-serif;
     background-color: rgba(214, 221, 229, 0.8); }
 
 .group__form {
-  padding: 50px 50px;
+  padding: 20px 50px;
   height: 100%;
   border-radius: 10px;
   background-color: rgba(43, 51, 62, 0.8);
-  color: #ffffff; }
+  color: #ffffff;
+  font-family: 'BrutaGlbRegular-Regular', sans-serif; }
   .group__form h4 {
-    font-size: 18px; }
+    font-size: 14px;
+    line-height: 20px; }
+  .group__form sup {
+    color: #76c208; }
+  .group__form input {
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: transparent;
+    outline: none; }
+  .group__form button {
+    padding: 10px 10px;
+    width: 100%;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: linear-gradient(to top, #ff6501, #ff8201);
+    border-radius: 5px;
+    border: transparent;
+    outline: none; }
+  .group__form p {
+    font-size: 12px; }
+
+.advantages__head {
+  text-align: center; }
+  .advantages__head:after {
+    content: '';
+    width: 140px;
+    color: #b7b7b7;
+    height: 1px; }
